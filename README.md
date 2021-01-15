@@ -1,2 +1,2 @@
-# 2doTailwindCss
-Pagina web con tailwind
+# Página web con jquery
+Pagina web hecha con Jquery, tailwing y css
