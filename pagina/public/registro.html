@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Formulario con Ajax</title>
+ <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <script src="app.js"></script>
+ </head>
+ <body>
+     <style>
+         #spam{display:none;}
+     </style>
+       <div id="fcontacto">
+        <!-- bloque confirmacion de envio oculto  -->
+        <div id="c_information" class="hide">
+            <p></p>
+        </div>
+        <!-- fin bloque confirmacion de envio -->
+        <br>
+        
+        <!-- inicio formulario -->
+        <form id="c_form" name="contact" data-role="page" id="pageone">
+            <div>
+            <div data-role="header" data-theme="b">
+                <h1>Formulario</h1>
+            </div>
+                <p>
+                    <input name="nombre" id="c_name" type="text" size="22" tabindex="1" placeholder="(*)Tu nombre" />
+                </p>
+                <p>
+                    <input name="email" id="c_mail" type="email" size="22" tabindex="2" placeholder="(*)Tu email" />
+                </p>
+                <p>
+                    <input name="dir" id="c_dir" type="text" size="22" tabindex="3" placeholder="Tu dirección" />
+                </p>
+                <p>
+                    <input name="telefono" id="c_telefono" type="number" size="22" tabindex="4" placeholder="Tu teléfono" />
+                </p>
+            </div>
+            
+            								
+            <p>
+                <label>(*) Campos Requeridos</label>
+                <input name="cenviar" type="button" id="c_enviar" tabindex="6" value="Guardar" onclick="cargaSendMail()" />       
+            </p>
+
+            
+        </form>
+        <!-- fin formulario -->
+        
+    </div>
+        <script src="js/registro.js"></script>
+ </body>
+ 
+</html>
